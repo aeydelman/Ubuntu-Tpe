@@ -1,0 +1,1094 @@
+<?xml version="1.0" standalone="yes"?>
+<EZP_DATA version="0.10" shapewidth="220" shapeheight="300" doorwidth="32" default_room="Hall"
+		  default_level="Main" metric="NO" room_word="Room" locale="" trace="off"
+		hardcopy_font_factor="1.15">
+
+<!-- room categories -->
+	<EZP_ROOM_CATEGORY name="Foyer" size="100" shortlist="YES" color="(215,238,238)" weight="900"/>
+	<EZP_ROOM_CATEGORY name="Lobby" size="300" shortlist="NO" color="(215,238,238)" weight="900"/>
+	<EZP_ROOM_CATEGORY name="Bedroom" size="120" ratio="1.0" shortname="Bed" shortlist="YES" dropsize="NO" color="(255,249,223)" weight="300"/>
+	<EZP_ROOM_CATEGORY name="Living" size="260" shortname="Live" shortlist="YES" dropsize="NO" room="YES" color="(243,225,212)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="Great Room" size="260" dropsize="NO" color="(243,245,212)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="Bonus Room" size="260" color="(243,225,212)" />
+	<EZP_ROOM_CATEGORY name="GreatRoom" size="260" dropsize="NO" selectable="NO" color="(243,225,212)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="BonusRoom" size="260" selectable="NO" color="(243,245,212)" />
+	<EZP_ROOM_CATEGORY name="LivingDining" size="260" shortname="Living" selectable="NO" color="(243,225,212)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="Living Dining" size="260" shortname="Living" color="(243,225,212)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="Family" size="300" shortlist="YES" dropsize="NO" room="YES" color="(243,225,212)" weight="600"/>
+	<EZP_ROOM_CATEGORY name="Loft" size="300" shortlist="NO" dropsize="NO" room="YES" color="(243,225,212)" />
+	<EZP_ROOM_CATEGORY name="Hallway" size="100" ratio="3.0" showname="NO" color="(235,228,218)" />
+	<EZP_ROOM_CATEGORY name="Landing" size="60" ratio="1.0" showname="NO" shortlist="YES" color="(235,228,218)" />
+	<EZP_ROOM_CATEGORY name="Laundry" size="60" ratio="1.0" shortname="Lndr" color="(241,216,241)" />
+	<EZP_ROOM_CATEGORY name="Library" size="60" ratio="1.0" shortname="Lib" color="(248,242,217)" />
+	<EZP_ROOM_CATEGORY name="Bathroom" size="80" shortname="Bath" shortlist="YES" bath="YES" color="(212,235,255)" weight="250"/>
+	<EZP_ROOM_CATEGORY name="WalkInCloset" size="80" shortname="WIC" color="(212,251,212)" />
+	<!-- do not use 1/2 Bath as long as room saved as a separate file with the room name -->
+	<EZP_ROOM_CATEGORY name="05Bath" size="60" ratio="1.0" shortname="Bath" shortlist="YES" bath="YES" color="(212,235,255)" weight="240"/>
+	<EZP_ROOM_CATEGORY name="Powder" size="60" ratio="1.0" shortname="Pdr" bath="YES" color="(212,235,255)" weight="240"/>
+	<EZP_ROOM_CATEGORY name="Entry" size="100" showname="NO" color="(235,238,218)" weight="900" />
+	<EZP_ROOM_CATEGORY name="Elevator" size="60" shortname="Elv" color="(241,216,241)" />
+	<EZP_ROOM_CATEGORY name="Porch" area="NO" inside="NO" color="(245,245,245)" weight="200"/>
+	<EZP_ROOM_CATEGORY name="Lanai" area="NO" inside="NO" color="(245,245,245)" />
+	<EZP_ROOM_CATEGORY name="Roof" area="YES" inside="NO" color="(245,245,245)" weight="100"/>
+	<EZP_ROOM_CATEGORY name="Reception" color="(245,228,218)" weight="900"/>
+	<EZP_ROOM_CATEGORY name="Bar" color="(243,215,231)" />
+	<EZP_ROOM_CATEGORY name="Sauna" bath="YES" color="(212,235,255)" weight="250"/>
+	<EZP_ROOM_CATEGORY name="MudRoom" shortname="mud" bath="YES" selectable="NO" color="(212,235,255)" />
+	<EZP_ROOM_CATEGORY name="Mud Room" shortname="mud" bath="YES" color="(212,235,255)" />
+	<EZP_ROOM_CATEGORY name="Closet" size="18" ratio="0.30" showsize="NO" shortname="CL" shortlist="YES" color="(215,251,215)" />
+	<EZP_ROOM_CATEGORY name="Stair" size="60" ratio="2.0" showname="NO" color="(255,255,255)" />
+	<EZP_ROOM_CATEGORY name="Filler" size="60" ratio="3.0" showname="NO" color="(0,0,0)" />
+	<EZP_ROOM_CATEGORY name="Garage" size="400" area="NO" shortlist="YES" color="(220,220,220)" weight="100"/>
+	<EZP_ROOM_CATEGORY name="Deck" area="NO" inside="NO" color="(192,192,192)" weight="200"/>
+	<EZP_ROOM_CATEGORY name="Patio" area="NO" inside="NO" color="(192,192,192)" weight="200"/>
+	<EZP_ROOM_CATEGORY name="Carport" size="200" area="NO" inside="NO" color="(220,220,220)" weight="100"/>
+	<EZP_ROOM_CATEGORY name="Terrace" area="NO" inside="NO" color="(245,245,245)" weight="200"/>
+	<EZP_ROOM_CATEGORY name="Pool" area="NO" inside="NO" color="(216,226,238)" />
+	<EZP_ROOM_CATEGORY name="Indoor Pool" area="YES" shortname="Pool" inside="YES" color="(216,226,238)" />
+	<EZP_ROOM_CATEGORY name="Balcony" inside="NO" showsize="YES" color="(245,245,245)" size="60" weight="200"/>
+	<EZP_ROOM_CATEGORY name="Kitchen" size="150" shortname="Kit" shortlist="YES" color="(255,236,221)" weight="700"/>
+	<EZP_ROOM_CATEGORY name="KitchenDining" size="150" shortname="Kitchen" selectable="NO" color="(255,236,221)" weight="700"/>
+	<EZP_ROOM_CATEGORY name="Kitchen Dining" size="150" shortname="Kitchen" selectable="YES" color="(255,236,221)" weight="700"/>
+	<EZP_ROOM_CATEGORY name="Dining" size="250" shortname="Dine" shortlist="YES" room="YES" color="(255,225,215)" weight="800"/>
+	<EZP_ROOM_CATEGORY name="Utility" shortname="Utl" size="100" shortlist="YES" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="WineCellar" size="100" shortname="wine" selectable="NO" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Wine Cellar" size="100" shortname="wine" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Storage" size="100" shortname="Strg" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Pantry" size="100" ratio="1.0" showsize="NO" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Master Bedroom" size="150" ratio="1.0" shortname="M.bed" shortlist="YES" dropsize="NO" color="(255,239,223)" weight="500"/>
+	<EZP_ROOM_CATEGORY name="Master Bathroom" size="100" ratio="1.0" shortname="M.bath" shortlist="YES" bath="YES" color="(212,235,255)" weight="400"/>
+	<EZP_ROOM_CATEGORY name="MasterBedroom" size="150" ratio="1.0" shortname="M.bed" selectable="NO" dropsize="NO" color="(255,239,223)" weight="500"/>
+	<EZP_ROOM_CATEGORY name="MasterBathroom" size="100" ratio="1.0" shortname="M.bath" selectable="NO" bath="YES" color="(212,235,255)" weight="400"/>
+	<EZP_ROOM_CATEGORY name="Breakfast" size="150" ratio="1.0" color="(255,236,229)" />
+	<EZP_ROOM_CATEGORY name="Office" size="150" ratio="1.0" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Den" size="150" ratio="1.0" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="OfficeBedroom" size="150" ratio="1.0" selectable="NO" color="(248,232,227)" weight="300"/>
+	<EZP_ROOM_CATEGORY name="Office Bedroom" size="150" ratio="1.0" color="(248,232,227)" weight="300"/>
+	<EZP_ROOM_CATEGORY name="Media" size="150" ratio="1.0" room="YES" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Recreation" size="150" ratio="1.0" shortname="recr" room="YES" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Playroom" size="150" ratio="1.0" shortname="play" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Study" size="150" ratio="1.0" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Sewing" size="150" ratio="1.0" color="(248,232,227)" />
+	<EZP_ROOM_CATEGORY name="Shop" size="150" ratio="1.0" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Sitting" size="100" ratio="1.0" color="(255,239,223)" />
+	<EZP_ROOM_CATEGORY name="Sunroom" size="100" ratio="1.0" inside="NO" shortname="sun" color="(231,211,231)" />
+	<EZP_ROOM_CATEGORY name="Hall" size="100" ratio="1.0" showname="NO" shortlist="YES" color="(245,228,221)" />
+	<EZP_ROOM_CATEGORY name="Exercise" color="(248,242,221)" />
+	<EZP_ROOM_CATEGORY name="Workout" color="(248,242,221)" />
+	<EZP_ROOM_CATEGORY name="Fitness" color="(248,242,221)" />
+	<EZP_ROOM_CATEGORY name="Connector" size="60" ratio="3.0" showname="NO" inside="NO" color="(242,250,253)" />
+	
+<!-- Levels -->
+	<EZP_LEVEL>Top Addition</EZP_LEVEL>
+	<EZP_LEVEL>Top</EZP_LEVEL>
+	<EZP_LEVEL>Upper</EZP_LEVEL>
+	<EZP_LEVEL>Main</EZP_LEVEL>
+	<EZP_LEVEL>Lower</EZP_LEVEL>
+	<EZP_LEVEL>Basement</EZP_LEVEL>
+	<EZP_LEVEL>Addition</EZP_LEVEL>
+	<EZP_LEVEL>Loft</EZP_LEVEL>
+	<EZP_LEVEL>Map</EZP_LEVEL>
+	<EZP_LEVEL>Aerial</EZP_LEVEL>
+
+<!-- VT -->
+	<EZP_VT driver="IpixViewer.jar" script="openIpix" format="ipx"/>
+	<EZP_VT driver="panoapplet.jar" script="openPan" format="ivr,jpg"/>
+
+
+<!-- partitions -->
+	<EZP_PARTITION name="Rect">
+		<EZP_SHAPES>
+			<EZP_SHAPE body="N1=Node(30,30);
+							N2=Node(30,290);
+							N3=Node(210,290);
+							N4=Node(210,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N1);
+							P1=Perpendicular(Seg1, Seg2);
+							Parallel1=Parallel(Seg2,Seg4);
+							Parallel2=Parallel(Seg3,Seg1);
+							Entrance=Node(120,30);"/>
+
+		</EZP_SHAPES>
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg3"/>
+		</EZP_CHAIN>		
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg4"/>
+		</EZP_CHAIN>		
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="Triangle">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="triangle"
+						body="N1=Node(30,160);
+							N2=Node(120,290);
+							N3=Node(190,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N1);
+							Entrance=Node(110,95);"/>
+			<EZP_SHAPE name="diamond" triangulate="YES"
+					   body="N1=Node(30,145);
+							N2=Node(100,290);
+							N3=Node(200,145);
+							N4=Node(100,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N1);
+							Entrance=Node(65,87);"/>
+			<EZP_SHAPE name="Star5" triangulate="YES"
+					   body="N1=Node(30,100);
+							N2=Node(60,290);
+							N3=Node(150,220);
+							N4=Node(200,140);
+							N5=Node(90,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N1);
+							Entrance=Node(60,65);"/>
+			<EZP_SHAPE name="Star6" triangulate="YES"
+					   body="N1=Node(30,170);
+							N2=Node(70,290);
+							N3=Node(160,230);
+							N4=Node(200,120);
+							N5=Node(120,30);
+							N6=Node(50,90);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N6);
+							Seg6=Segment(N6,N1);
+							Entrance=Node(45,135);"/>
+		</EZP_SHAPES>
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg6"/>
+		</EZP_CHAIN>		
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="Chamfer">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1" body="Nod1=Node(30,30);
+										Nod2=Node(30,290);
+										Nod3=Node(120,290);
+										Nod4=Node(210,200);
+										Nod5=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod1);
+										Parallel1=Parallel(Seg1,Seg4);
+										P1=Perpendicular(Seg1, Seg5);
+										Parallel2=Parallel(Seg2,Seg5);
+			  							A1=Angle(Seg2,Seg3);
+										A2=Angle(Seg3,Seg4);
+										Entrance=Node(120,30);"/>
+			<EZP_SHAPE name="rot2" body="Nod1=Node(30,30);
+										Nod2=Node(30,200);
+										Nod3=Node(120,290);
+										Nod4=Node(210,200);
+										Nod5=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod1);
+										P1=Perpendicular(Seg1, Seg5);
+										Parallel1=Parallel(Seg1,Seg4);
+			  							A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg3,Seg4);
+										Entrance=Node(120,30);"/>
+			<EZP_SHAPE name="rot3" body="Nod1=Node(30,30);
+										Nod2=Node(30,210);
+										Nod3=Node(90,210);
+										Nod4=Node(90,150);
+										Nod5=Node(150,90);
+										Nod6=Node(210,90);
+										Nod7=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										P1=Perpendicular(Seg1, Seg6);
+										Parallel3=Parallel(Seg6,Seg4);
+										Parallel4=Parallel(Seg6,Seg2);
+										A1=Angle(Seg3,Seg4);
+										A2=Angle(Seg4,Seg5);
+										Entrance=Node(120,30);"/>
+			<EZP_SHAPE name="rot4" body="Nod1=Node(30,120);
+										Nod2=Node(30,210);
+										Nod3=Node(120,210);
+										Nod4=Node(120,120);
+										Nod5=Node(210,120);
+										Nod6=Node(210,30);
+										Nod7=Node(120,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										P1=Perpendicular(Seg3, Seg4);
+										Parallel3=Parallel(Seg6,Seg4);
+										Parallel4=Parallel(Seg6,Seg2);
+										A1=Angle(Seg1,Seg7);
+										A2=Angle(Seg6,Seg7);
+										Entrance=Node(165,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg7"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+		</EZP_CHAIN>		
+	</EZP_PARTITION>
+	
+	<EZP_PARTITION name="Steals">
+		<EZP_SHAPES>
+
+				<EZP_SHAPE name="rot1" body="Nod1=Node(30,30);
+										Nod2=Node(30,210);
+										Nod3=Node(90,210);
+										Nod4=Node(90,150);
+										Nod5=Node(150,90);
+										Nod6=Node(210,90);
+										Nod7=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg6);
+										P1=Perpendicular(Seg1, Seg7);
+										Parallel3=Parallel(Seg7,Seg5);
+										Parallel4=Parallel(Seg7,Seg2);
+										A1=Angle(Seg3,Seg4);
+										A2=Angle(Seg4,Seg5);
+										Entrance=Node(120,30);"/>
+			<EZP_SHAPE name="rot2" body="Nod1=Node(30,120);
+										Nod2=Node(30,210);
+										Nod3=Node(120,210);
+										Nod4=Node(120,120);
+										Nod5=Node(210,120);
+										Nod6=Node(210,30);
+										Nod7=Node(120,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										P1=Perpendicular(Seg3, Seg4);
+										Parallel3=Parallel(Seg6,Seg4);
+										Parallel4=Parallel(Seg6,Seg2);
+										A1=Angle(Seg7,Seg1);
+										A2=Angle(Seg6,Seg7);
+										Entrance=Node(165,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg7"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+		</EZP_CHAIN>		
+	</EZP_PARTITION>
+
+
+	<EZP_PARTITION name="Bay">
+		<EZP_SHAPES>
+
+			<EZP_SHAPE name="rot1"
+					   body="N1=Node(30,30);
+							N2=Node(30,240);
+							N3=Node(70,240);
+							N4=Node(90,290);
+							N5=Node(150,290);
+							N6=Node(170,240);
+							N7=Node(210,240);
+							N8=Node(210,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+						    Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N6);
+							Seg6=Segment(N6,N7);
+							Seg7=Segment(N7,N8);
+							Seg8=Segment(N8,N1);
+							P1=Perpendicular(Seg1, Seg8);
+							Parallel1=Parallel(Seg1,Seg7);
+							Parallel2=Parallel(Seg8,Seg4);
+							Parallel3=Parallel(Seg8,Seg2);
+							Parallel4=Parallel(Seg8,Seg6);
+  							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg3,Seg4);
+			  				A3=Angle(Seg4,Seg5);
+							A4=Angle(Seg6,Seg5);
+							Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot2"
+					   body="N1=Node(210,30);
+							N2=Node(60,30);
+							N3=Node(60,60);
+							N4=Node(30,120);
+							N5=Node(30,230);
+							N6=Node(60,260);
+							N7=Node(60,290);
+							N8=Node(210,290);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+						    Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N6);
+							Seg6=Segment(N6,N7);
+							Seg7=Segment(N7,N8);
+							Seg8=Segment(N8,N1);
+ 							P1=Perpendicular(Seg1, Seg8);
+							Parallel1=Parallel(Seg1,Seg7);
+							Parallel2=Parallel(Seg8,Seg4);
+							Parallel3=Parallel(Seg8,Seg6);
+							Parallel4=Parallel(Seg8,Seg2);
+  							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg3,Seg4);
+			  				A3=Angle(Seg4,Seg5);
+							A4=Angle(Seg6,Seg5);
+							Entrance=Node(160,30);"/>
+
+			<EZP_SHAPE name="rot3"
+					   body="N1=Node(30,290);
+							N2=Node(180,290);
+							N3=Node(180,260);
+							N4=Node(210,230);
+							N5=Node(210,120);
+							N6=Node(180,90);
+							N7=Node(180,30);
+							N8=Node(30,30);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+						    Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N6);
+							Seg6=Segment(N6,N7);
+							Seg7=Segment(N7,N8);
+							Seg8=Segment(N8,N1);
+							P1=Perpendicular(Seg1, Seg8);
+							Parallel1=Parallel(Seg1,Seg7);
+							Parallel2=Parallel(Seg8,Seg2);
+							Parallel3=Parallel(Seg8,Seg6);
+							Parallel4=Parallel(Seg8,Seg4);
+  							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg3,Seg4);
+			  				A3=Angle(Seg4,Seg5);
+							A4=Angle(Seg6,Seg5);
+							Entrance=Node(90,30);"/>
+
+			<EZP_SHAPE name="rot4"
+					   body="N1=Node(210,290);
+							N2=Node(210,60);
+							N3=Node(190,60);
+							N4=Node(160,30);
+							N5=Node(80,30);
+							N6=Node(50,60);
+							N7=Node(30,60);
+							N8=Node(30,290);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+						    Seg3=Segment(N3,N4);
+							Seg4=Segment(N4,N5);
+							Seg5=Segment(N5,N6);
+							Seg6=Segment(N6,N7);
+							Seg7=Segment(N7,N8);
+							Seg8=Segment(N8,N1);
+							P1=Perpendicular(Seg1, Seg8);
+							Parallel1=Parallel(Seg1,Seg7);
+							Parallel2=Parallel(Seg8,Seg2);
+							Parallel3=Parallel(Seg8,Seg6);
+							Parallel4=Parallel(Seg8,Seg4);
+  							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg3,Seg4);
+			  				A3=Angle(Seg4,Seg5);
+							A4=Angle(Seg6,Seg5);
+							Entrance=Node(120,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg7"/>
+			<EZP_EDGE name="Seg8"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg5"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="L-shape">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1"
+					   body="Nod1=Node(30,30);
+							Nod2=Node(30,290);
+							Nod3=Node(210,290);
+							Nod4=Node(210,160);
+							Nod5=Node(120,160);
+							Nod6=Node(120,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg3);
+							Parallel2=Parallel(Seg1,Seg5);
+							Parallel3=Parallel(Seg2,Seg6);
+							Parallel4=Parallel(Seg2,Seg4);
+							P1=Perpendicular(Seg1, Seg2);
+							Entrance=Node(75,30);"/>
+			<EZP_SHAPE name="rot2"
+					   body="Nod1=Node(210,30);
+							Nod2=Node(210,290);
+							Nod3=Node(30,290);
+							Nod4=Node(30,160);
+							Nod5=Node(120,160);
+							Nod6=Node(120,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg3);
+							Parallel2=Parallel(Seg1,Seg5);
+							Parallel3=Parallel(Seg2,Seg6);
+							Parallel4=Parallel(Seg2,Seg4);
+							P1=Perpendicular(Seg1, Seg2);
+							Entrance=Node(165,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg5"/>
+		</EZP_CHAIN>		
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg6"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="L#-shape">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1"
+						body="Nod1=Node(30,30);
+							Nod2=Node(30,270);
+							Nod3=Node(120,270);
+							Nod4=Node(240,150);
+							Nod5=Node(120,150);
+							Nod6=Node(120,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg5);
+							P1=Perpendicular(Seg1, Seg2);
+							Parallel2=Parallel(Seg2,Seg6);
+							Parallel3=Parallel(Seg2,Seg4);
+							A1=Angle(Seg2,Seg3);
+							A2=Angle(Seg3,Seg4);
+							Entrance=Node(75,30);"/>
+
+			<EZP_SHAPE name="rot2"
+						body="Nod1=Node(240,30);
+							Nod2=Node(240,270);
+							Nod3=Node(150,270);
+							Nod4=Node(30,150);
+							Nod5=Node(150,150);
+							Nod6=Node(150,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg5);
+							P1=Perpendicular(Seg1, Seg2);
+							Parallel2=Parallel(Seg2,Seg6);
+							Parallel3=Parallel(Seg2,Seg4);
+							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg4,Seg3);
+							Entrance=Node(210,30);"/>
+
+			<EZP_SHAPE name="rot3"
+						body="Nod1=Node(30,30);
+							Nod2=Node(30,210);
+							Nod3=Node(90,270);
+							Nod4=Node(180,270);
+							Nod5=Node(240,210);
+							Nod6=Node(240,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg5);
+							P1=Perpendicular(Seg5, Seg6);
+							Parallel2=Parallel(Seg3,Seg6);
+							A1=Angle(Seg1,Seg2);
+							A2=Angle(Seg2,Seg3);
+							A3=Angle(Seg3,Seg4);
+							A4=Angle(Seg4,Seg5);
+							Entrance=Node(135,30);"/>
+
+			<EZP_SHAPE name="rot4"
+						body="Nod1=Node(30,30);
+						Nod2=Node(30,150);
+						Nod3=Node(120,240);
+						Nod4=Node(180,180);
+						Nod5=Node(120,120);
+						Nod6=Node(120,30);
+						Seg1=Segment(Nod1,Nod2);
+						Seg2=Segment(Nod2,Nod3);
+						Seg3=Segment(Nod3,Nod4);
+						Seg4=Segment(Nod4,Nod5);
+						Seg5=Segment(Nod5,Nod6);
+						Seg6=Segment(Nod6,Nod1);
+						Parallel1=Parallel(Seg1,Seg5);
+						P1=Perpendicular(Seg1, Seg6);
+						Parallel2=Parallel(Seg2,Seg4);
+						P2=Perpendicular(Seg2, Seg3);
+						A1=Angle(Seg1,Seg2);
+						A2=Angle(Seg5,Seg4);
+						Entrance=Node(75,30);"/>
+
+			<EZP_SHAPE name="rot5"
+						body="Nod1=Node(30,30);
+							Nod2=Node(30,180);
+							Nod3=Node(90,240);
+							Nod4=Node(150,180);
+							Nod5=Node(240,180);
+							Nod6=Node(240,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg5);
+							P1=Perpendicular(Seg1, Seg6);
+							Parallel2=Parallel(Seg4,Seg6);
+							A1=Angle(Seg1,Seg2);
+							A2=Angle(Seg4,Seg3);
+							Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot6"
+						body="Nod1=Node(30,30);
+							Nod2=Node(30,180);
+							Nod3=Node(120,180);
+							Nod4=Node(180,240);
+							Nod5=Node(240,180);
+							Nod6=Node(240,30);
+							Seg1=Segment(Nod1,Nod2);
+							Seg2=Segment(Nod2,Nod3);
+							Seg3=Segment(Nod3,Nod4);
+							Seg4=Segment(Nod4,Nod5);
+							Seg5=Segment(Nod5,Nod6);
+							Seg6=Segment(Nod6,Nod1);
+							Parallel1=Parallel(Seg1,Seg5);
+							P1=Perpendicular(Seg1, Seg6);
+							Parallel2=Parallel(Seg2,Seg6);
+							A1=Angle(Seg3,Seg2);
+							A2=Angle(Seg4,Seg5);
+							Entrance=Node(120,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="Trapezoid">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1" body="Nod1=Node(30,30);
+										Nod2=Node(30,160);
+										Nod3=Node(210,290);
+										Nod4=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										P1=Perpendicular(Seg1, Seg4);
+										Parallel1=Parallel(Seg1,Seg3);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot2" body="Nod1=Node(30,30);
+										Nod2=Node(30,290);
+										Nod3=Node(120,290);
+										Nod4=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										P1=Perpendicular(Seg1, Seg4);
+										Parallel1=Parallel(Seg4,Seg2);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot3" body="Nod1=Node(210,30);
+										Nod2=Node(210,290);
+										Nod3=Node(120,290);
+										Nod4=Node(30,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										P1=Perpendicular(Seg1, Seg4);
+										Parallel1=Parallel(Seg4,Seg2);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot4" body="Nod1=Node(210,290);
+										Nod2=Node(210,160);
+										Nod3=Node(30,30);
+										Nod4=Node(30,290);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										P1=Perpendicular(Seg1, Seg4);
+										Parallel1=Parallel(Seg1,Seg3);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										Entrance=Node(120,95);"/>
+
+			<EZP_SHAPE name="rot5" body="Nod1=Node(30,100);
+										Nod2=Node(30,190);
+										Nod3=Node(210,280);
+										Nod4=Node(210,10);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										A3=Angle(Seg3,Seg4);
+  									A4=Angle(Seg4,Seg1);
+										Entrance=Node(30,145);"/>
+      
+			<EZP_SHAPE name="rot6" body="Nod1=Node(90,195);
+										Nod2=Node(150,195);
+										Nod3=Node(210,115);
+										Nod4=Node(30,115);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod1);
+										Parallel1=Parallel(Seg1,Seg3);
+			  						A1=Angle(Seg1,Seg2);
+										A2=Angle(Seg2,Seg3);
+										A3=Angle(Seg3,Seg4);
+  									A4=Angle(Seg4,Seg1);
+										Entrance=Node(120,115);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="C-shape">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1" body="Nod1=Node(30,30);
+										Nod2=Node(30,290);
+										Nod3=Node(90,290);
+										Nod4=Node(90,130);
+										Nod5=Node(150,130);
+										Nod6=Node(150,290);
+										Nod7=Node(210,290);
+										Nod8=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot2" body="Nod1=Node(90,130);
+										Nod2=Node(90,30);
+										Nod3=Node(30,30);
+										Nod4=Node(30,290);
+										Nod5=Node(210,290);
+										Nod6=Node(210,30);
+										Nod7=Node(150,30);
+										Nod8=Node(150,130);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(120,130);"/>
+
+			<EZP_SHAPE name="rot3" body="Nod1=Node(30,30);
+										Nod2=Node(30,150);
+										Nod3=Node(120,150);
+										Nod4=Node(120,210);
+										Nod5=Node(240,210);
+										Nod6=Node(240,90);
+										Nod7=Node(180,90);
+										Nod8=Node(180,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(90,30);"/>
+
+			<EZP_SHAPE name="rot4" body="Nod1=Node(30,30);
+										Nod2=Node(30,210);
+										Nod3=Node(90,210);
+										Nod4=Node(90,150);
+										Nod5=Node(150,150);
+										Nod6=Node(150,90);
+										Nod7=Node(240,90);
+										Nod8=Node(240,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(135,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg7"/>
+		</EZP_CHAIN>		
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg8"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="T-shape">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="rot1" body="Nod1=Node(30,30);
+										Nod2=Node(30,130);
+										Nod3=Node(90,130);
+										Nod4=Node(90,290);
+										Nod5=Node(150,290);
+										Nod6=Node(150,130);
+										Nod7=Node(210,130);
+										Nod8=Node(210,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot2" body="Nod1=Node(90,30);
+										Nod2=Node(90,130);
+										Nod3=Node(30,130);
+										Nod4=Node(30,290);
+										Nod5=Node(210,290);
+										Nod6=Node(210,130);
+										Nod7=Node(150,130);
+										Nod8=Node(150,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg8);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg4,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg4,Seg8);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="rot3" body="Nod1=Node(30,30);
+										Nod2=Node(30,290);
+										Nod3=Node(120,290);
+										Nod4=Node(120,200);
+										Nod5=Node(210,200);
+										Nod6=Node(210,130);
+										Nod7=Node(120,130);
+										Nod8=Node(120,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(75,30);"/>
+
+			<EZP_SHAPE name="rot4" body="Nod1=Node(210,30);
+										Nod2=Node(210,290);
+										Nod3=Node(120,290);
+										Nod4=Node(120,200);
+										Nod5=Node(30,200);
+										Nod6=Node(30,130);
+										Nod7=Node(120,130);
+										Nod8=Node(120,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod7);
+										Seg7=Segment(Nod7,Nod8);
+										Seg8=Segment(Nod8,Nod1);
+										P1=Perpendicular(Seg1, Seg2);
+										Parallel1=Parallel(Seg1,Seg3);
+										Parallel2=Parallel(Seg1,Seg5);
+										Parallel3=Parallel(Seg1,Seg7);
+										Parallel4=Parallel(Seg2,Seg6);
+										Parallel5=Parallel(Seg2,Seg4);
+										Parallel6=Parallel(Seg2,Seg8);
+										Entrance=Node(165,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg7"/>
+		</EZP_CHAIN>		
+		<EZP_CHAIN>
+			<EZP_EDGE name="Seg2"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg8"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+
+	<EZP_PARTITION name="Rigid">
+		<EZP_SHAPES>
+			<EZP_SHAPE name="house1" body="Nod1=Node(30,30);
+										Nod2=Node(30,180);
+										Nod3=Node(90,240);
+										Nod4=Node(150,180);
+										Nod5=Node(240,180);
+										Nod6=Node(240,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod1);
+										A1=Angle(Seg1,Seg2);
+										A1=Value(135.0);
+										A2=Angle(Seg4,Seg3);
+										A2=Value(135.0);
+										Parallel1=Parallel(Seg1,Seg5);
+										P1=Perpendicular(Seg1, Seg6);
+										Parallel2=Parallel(Seg4,Seg6);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="house2" body="Nod1=Node(30,30);
+										Nod2=Node(30,180);
+										Nod3=Node(120,180);
+										Nod4=Node(180,240);
+										Nod5=Node(240,180);
+										Nod6=Node(240,30);
+										Seg1=Segment(Nod1,Nod2);
+										Seg2=Segment(Nod2,Nod3);
+										Seg3=Segment(Nod3,Nod4);
+										Seg4=Segment(Nod4,Nod5);
+										Seg5=Segment(Nod5,Nod6);
+										Seg6=Segment(Nod6,Nod1);
+										A1=Angle(Seg3,Seg2);
+										A1=Value(135.0);
+										A2=Angle(Seg4,Seg5);
+										A2=Value(135.0);
+										Parallel1=Parallel(Seg1,Seg5);
+										P1=Perpendicular(Seg1, Seg6);
+										Parallel2=Parallel(Seg2,Seg6);
+										Entrance=Node(120,30);"/>
+
+			<EZP_SHAPE name="bay1" body="N1=Node(30,30);
+										N2=Node(30,240);
+										N3=Node(70,240);
+										N4=Node(90,290);
+										N5=Node(150,290);
+										N6=Node(170,240);
+										N7=Node(210,240);
+										N8=Node(210,30);
+										Seg1=Segment(N1,N2);
+										Seg2=Segment(N2,N3);
+										Seg3=Segment(N3,N4);
+										Seg4=Segment(N4,N5);
+										Seg5=Segment(N5,N6);
+										Seg6=Segment(N6,N7);
+										Seg7=Segment(N7,N8);
+										Seg8=Segment(N8,N1);
+										A1=Angle(Seg3,Seg2);
+										A2=Angle(Seg3,Seg4);
+										A3=Angle(Seg4,Seg5);
+										A4=Angle(Seg6,Seg5);
+										A1=Value(135.0);
+										A2=Value(135.0);
+										A3=Value(135.0);
+										A4=Value(135.0);
+										Parallel1=Parallel(Seg1,Seg7);
+										Parallel2=Parallel(Seg8,Seg4);
+										Parallel3=Parallel(Seg8,Seg2);
+										Parallel4=Parallel(Seg8,Seg6);
+										P1=Perpendicular(Seg1, Seg8);
+										Entrance=Node(120,30);"/>
+		</EZP_SHAPES>
+
+		<EZP_CHAIN ortho="NO">
+			<EZP_EDGE name="Seg3"/>
+			<EZP_EDGE name="Seg4"/>
+			<EZP_EDGE name="Seg5"/>
+			<EZP_EDGE name="Seg6"/>
+			<EZP_EDGE name="Seg7"/>
+			<EZP_EDGE name="Seg8"/>
+			<EZP_EDGE name="Seg1"/>
+			<EZP_EDGE name="Seg2"/>
+		</EZP_CHAIN>		
+
+	</EZP_PARTITION>
+  
+  <EZP_PARTITION name="Sketch">
+    <EZP_SHAPES>
+      <EZP_SHAPE sketch="yes"
+           body="N1=Node(210,90);
+              N2=Node(210,50);
+              N3=Node(70,50);
+							N4=Node(70,250);
+							N5=Node(110,250);
+							Seg1=Segment(N1,N2);
+							Seg2=Segment(N2,N3);
+							Seg3=Segment(N3,N4);
+              Seg3=Segment(N4,N5);"/>
+    </EZP_SHAPES>
+  </EZP_PARTITION>
+
+</EZP_DATA>
